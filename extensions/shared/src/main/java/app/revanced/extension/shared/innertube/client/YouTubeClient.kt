@@ -97,7 +97,7 @@ object YouTubeClient {
         "1.61.48"
     else
         // Cronet version: 113.0.5672.24
-        "1.43.32"
+        "1.54.20"
 
     private val DEVICE_MODEL_ANDROID_VR = if (useAV1())
         // https://dumps.tadiphone.dev/dumps/oculus/eureka
@@ -115,7 +115,7 @@ object YouTubeClient {
     else
         "29"
     private val BUILD_ID_ANDROID_VR = if (useAV1())
-        "SQ3A.220605.009.A1"
+        "UP1A.231005.007.A1"
     else
         "QQ3A.200805.001"
 
