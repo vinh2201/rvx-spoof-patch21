@@ -757,10 +757,6 @@ public final class app/revanced/patches/youtube/feed/flyoutmenu/FeedFlyoutMenuPa
 	public static final fun getFeedFlyoutMenuPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
-public final class app/revanced/patches/youtube/general/updatescreen/DisableUpdateScreenPatchKt {
-	public static final fun getDisableUpdateScreen ()Lapp/revanced/patcher/patch/BytecodePatch;
-}
-
 public final class app/revanced/patches/youtube/general/audiotracks/AudioTracksPatchKt {
 	public static final fun getAudioTracksPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
@@ -1534,4 +1530,3 @@ public final class app/revanced/util/fingerprint/LegacyFingerprintKt {
 	public static final fun injectLiteralInstructionBooleanCall (Lapp/revanced/patcher/patch/BytecodePatchContext;Lkotlin/Pair;JLjava/lang/String;)V
 	public static final fun injectLiteralInstructionViewCall (Lapp/revanced/patcher/patch/BytecodePatchContext;Lkotlin/Pair;JLjava/lang/String;)V
 }
-
