@@ -24,7 +24,7 @@ Report issues [here](https://github.com/inotia00/ReVanced_Extended).
 
 | 💊 Patch | 📜 Description | 🏹 Target Version |
 |:--------:|:--------------:|:-----------------:|
-| `Add missing resources` | Add missing resources to prevent crashes in 17.34.36. Currently, only a few resources are supported. Also, replace missing drawables with a transparent image to prevent crashes. | 19.05.36 ~ 20.05.46 |
+| `Add missing resources` | Add missing resources to prevent crashes. Currently, only a few resources are supported. Also, replace missing drawables with a transparent image to prevent crashes. | 19.05.36 ~ 20.05.46 |
 | `Alternative thumbnails` | Adds options to replace video thumbnails using the DeArrow API or image captures from the video. | 19.05.36 ~ 20.05.46 |
 | `Ambient mode control` | Adds options to disable Ambient mode and to bypass Ambient mode restrictions. | 19.05.36 ~ 20.05.46 |
 | `Bypass URL redirects` | Adds an option to bypass URL redirects and open the original URL directly. | 19.05.36 ~ 20.05.46 |
@@ -53,7 +53,7 @@ Report issues [here](https://github.com/inotia00/ReVanced_Extended).
 | `Enable debug logging` | Adds an option for debugging and exporting RVX logs to the clipboard. | 19.05.36 ~ 20.05.46 |
 | `Enable gradient loading screen` | Adds an option to enable the gradient loading screen. | 19.05.36 ~ 20.05.46 |
 | `Force hide player buttons background` | Removes, at compile time, the dark background surrounding the video player controls. | 19.05.36 ~ 20.05.46 |
-| `Freeze layout updates` | Freeze the current server-side layout. Mandatory for 17.34.36. | 19.05.36 ~ 20.05.46 |
+| `Freeze layout updates` | Freeze the current server-side layout. | 19.05.36 ~ 20.05.46 |
 | `Fullscreen components` | Adds options to hide or change components related to fullscreen. | 19.05.36 ~ 20.05.46 |
 | `GmsCore support` | Allows the app to work without root by using a different package name when patched using a GmsCore instead of Google Play Services. | 19.05.36 ~ 20.05.46 |
 | `Hide Shorts dimming` | Removes, at compile time, the dimming effect at the top and bottom of Shorts videos. | 19.05.36 ~ 20.05.46 |
