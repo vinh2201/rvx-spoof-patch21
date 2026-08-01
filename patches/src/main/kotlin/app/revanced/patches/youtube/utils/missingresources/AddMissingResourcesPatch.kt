@@ -5,6 +5,7 @@ import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.patch.bytecodePatch
 import app.revanced.patcher.patch.resourcePatch
 import app.revanced.patcher.util.smali.ExternalLabel
+import app.revanced.patches.youtube.general.toolbar.attributeResolverFingerprint
 import app.revanced.patches.youtube.utils.compatibility.Constants.COMPATIBLE_PACKAGE
 import app.revanced.patches.youtube.utils.patch.PatchList.ADD_MISSING_RESOURCES
 import app.revanced.patches.youtube.utils.settings.ResourceUtils.addPreference
