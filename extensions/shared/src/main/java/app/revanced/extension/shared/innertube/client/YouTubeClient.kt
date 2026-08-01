@@ -94,7 +94,7 @@ object YouTubeClient {
         // Lowest version that supports AV1.
         // According to the changelog, only Quest 3 supports the AV1 codec in this version.
         // Cronet version: 122.0.6238.3
-        "1.61.48"
+        "1.65.10"
     else
         // Cronet version: 113.0.5672.24
         "1.54.20"
