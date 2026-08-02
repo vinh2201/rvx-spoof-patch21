@@ -757,6 +757,10 @@ public final class app/revanced/patches/youtube/feed/flyoutmenu/FeedFlyoutMenuPa
 	public static final fun getFeedFlyoutMenuPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
+public final class app/revanced/patches/youtube/general/updatescreen/DisableUpdateScreenPatchKt {
+	public static final fun getDisableUpdateScreen ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
 public final class app/revanced/patches/youtube/general/audiotracks/AudioTracksPatchKt {
 	public static final fun getAudioTracksPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
@@ -779,10 +783,6 @@ public final class app/revanced/patches/youtube/general/downloads/DownloadAction
 
 public final class app/revanced/patches/youtube/general/formfactor/ChangeFormFactorPatchKt {
 	public static final fun getChangeFormFactorPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
-}
-
-public final class app/revanced/patches/youtube/general/layoutupdates/FreezeLayoutUpdatesPatchKt {
-	public static final fun getFreezeLayoutUpdatesPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
 public final class app/revanced/patches/youtube/general/livering/OpenChannelOfLiveAvatarPatchKt {
@@ -835,10 +835,6 @@ public final class app/revanced/patches/youtube/general/transcript/TranscriptCoo
 
 public final class app/revanced/patches/youtube/general/updates/LayoutUpdatesPatchKt {
 	public static final fun getLayoutUpdatesPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
-}
-
-public final class app/revanced/patches/youtube/general/updatescreen/DisableUpdateScreenPatchKt {
-	public static final fun getDisableUpdateScreen ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
 public final class app/revanced/patches/youtube/layout/actionbuttons/ShortsActionButtonsPatchKt {
@@ -1102,10 +1098,6 @@ public final class app/revanced/patches/youtube/utils/lottie/LottieAnimationView
 
 public final class app/revanced/patches/youtube/utils/mainactivity/MainActivityResolvePatchKt {
 	public static final fun getMainActivityResolvePatch ()Lapp/revanced/patcher/patch/BytecodePatch;
-}
-
-public final class app/revanced/patches/youtube/utils/missingresources/AddMissingResourcesPatchKt {
-	public static final fun getAddMissingResourcesPatch ()Lapp/revanced/patcher/patch/ResourcePatch;
 }
 
 public final class app/revanced/patches/youtube/utils/navigation/NavigationBarHookPatchKt {

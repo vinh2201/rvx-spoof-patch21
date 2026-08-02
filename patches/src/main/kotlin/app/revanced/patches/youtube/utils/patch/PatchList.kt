@@ -286,4 +286,3 @@ internal enum class PatchList(
         "Add missing resources to prevent crashes. Currently, only a few resources are supported. Also, replace missing drawables with a transparent image to prevent crashes."
     )
 }
-

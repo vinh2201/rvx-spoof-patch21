@@ -10,7 +10,7 @@ internal val navigationBarGetDrawableFingerprint = legacyFingerprint(
     returnType = "Landroid/graphics/drawable/Drawable;",
     parameters = listOf("Landroid/content/Context;", "I"),
     customFingerprint = { methodDef, classDef ->
-        methodDef.name == "a"
+        methodDef.name == "Y"
         // && classDef.type == "Lzv;"
     }
 )

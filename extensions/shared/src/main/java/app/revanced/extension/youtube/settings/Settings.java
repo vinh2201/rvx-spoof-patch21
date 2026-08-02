@@ -57,6 +57,7 @@ import app.revanced.extension.youtube.swipecontrols.SwipeControlsConfigurationPr
 
 @SuppressWarnings("unused")
 public class Settings extends BaseSettings {
+
     // PreferenceScreen: Spoofing
     public static final BooleanSetting FREEZE_LAYOUT_UPDATES = new BooleanSetting("revanced_freeze_layout_updates", FALSE, true);
 

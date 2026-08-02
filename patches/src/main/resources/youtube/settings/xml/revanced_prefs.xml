@@ -8,8 +8,10 @@
         <PreferenceCategory android:title="@string/revanced_spoof_app_version_title">
             <SwitchPreference android:title="@string/revanced_spoof_app_version_title" android:key="revanced_spoof_app_version" android:summaryOn="@string/revanced_spoof_app_version_summary_on" android:summaryOff="@string/revanced_spoof_app_version_summary_off" />
             <app.revanced.extension.youtube.settings.preference.SpoofAppVersionPreference android:title="@string/revanced_spoof_app_version_target_title" android:key="revanced_spoof_app_version_target" />
+            
             <!-- SETTINGS: FIX_SPOOF_APP_VERSION_SIDE_EFFECT
             <SwitchPreference android:title="@string/revanced_fix_spoof_app_version_side_effect_title" android:key="revanced_fix_spoof_app_version_side_effect" android:summaryOn="@string/revanced_fix_spoof_app_version_side_effect_summary_on" android:summaryOff="@string/revanced_fix_spoof_app_version_side_effect_summary_off" />SETTINGS: FIX_SPOOF_APP_VERSION_SIDE_EFFECT -->
+            
         </PreferenceCategory>SETTINGS: SPOOF_APP_VERSION -->
         <!-- SETTINGS: FREEZE_LAYOUT_UPDATES
         <PreferenceCategory android:title="@string/revanced_freeze_layout_updates_category_title">
@@ -323,7 +325,6 @@
 
         <!-- SETTINGS: CHANGE_FORM_FACTOR
         <app.revanced.extension.shared.settings.preference.CustomDialogListPreference android:entries="@array/revanced_change_form_factor_entries" android:title="@string/revanced_change_form_factor_title" android:key="revanced_change_form_factor" android:entryValues="@array/revanced_change_form_factor_entry_values" />SETTINGS: CHANGE_FORM_FACTOR -->
-
 
     <!-- PREFERENCE_SCREEN: GENERAL
     </PreferenceScreen>PREFERENCE_SCREEN: GENERAL -->

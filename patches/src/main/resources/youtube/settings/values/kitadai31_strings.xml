@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="revanced_preference_screen_spoofing_title">🌟 !!!App version spoofing related!!!</string>
+    <string name="revanced_preference_screen_spoofing_title">🌟 !!!SPOOF APP VERSION related!!!</string>
     <string name="revanced_freeze_layout_updates_category_title">Freeze server-side layouts</string>
     <string name="revanced_freeze_layout_updates_title">Freeze layout updates</string>
     <string name="revanced_freeze_layout_updates_summary">Freeze the current server-side layout by stopping updating of Hot Config and Cold Config.\nThe following four values are automatically set when this setting is turned on.</string>
