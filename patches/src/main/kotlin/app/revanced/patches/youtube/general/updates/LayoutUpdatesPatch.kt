@@ -37,8 +37,7 @@ val layoutUpdatesPatch = bytecodePatch(
 
         addPreference(
             arrayOf(
-                "PREFERENCE_SCREEN: GENERAL",
-                "PREFERENCE_CATEGORY: GENERAL_EXPERIMENTAL_FLAGS",
+                "PREFERENCE_SCREEN: SPOOFING",
                 "SETTINGS: DISABLE_LAYOUT_UPDATES"
             ),
             DISABLE_LAYOUT_UPDATES
