@@ -58,17 +58,6 @@ import app.revanced.extension.youtube.swipecontrols.SwipeControlsConfigurationPr
 @SuppressWarnings("unused")
 public class Settings extends BaseSettings {
 
-    // PreferenceScreen: Spoofing
-    public static final BooleanSetting FREEZE_LAYOUT_UPDATES = new BooleanSetting("revanced_freeze_layout_updates", FALSE, true);
-
-    public static final StringSetting FROZEN_HOT_CONFIG_GROUP = new StringSetting("revanced_frozen_hot_config_group", "");
-    public static final StringSetting FROZEN_HOT_HASH_DATA = new StringSetting("revanced_frozen_hot_hash_data", "");
-    public static final StringSetting FROZEN_COLD_CONFIG_GROUP = new StringSetting("revanced_frozen_cold_config_group", "");
-    public static final StringSetting FROZEN_COLD_HASH_DATA = new StringSetting("revanced_frozen_cold_hash_data", "");
-    // public static final BooleanSetting FREEZE_LAYOUT_UPDATES_TIMESTAMP = new BooleanSetting("revanced_freeze_layout_updates_timestamp", FALSE, true, parent(FREEZE_LAYOUT_UPDATES));
-    // public static final LongSetting FROZEN_HOT_STORED_TIMESTAMP = new LongSetting("revanced_frozen_hot_stored_timestamp", -1L);
-    // public static final LongSetting FROZEN_COLD_STORED_TIMESTAMP = new LongSetting("revanced_cold_stored_timestamp", -1L);
-
     // PreferenceScreen: Ads
     public static final BooleanSetting HIDE_CREATOR_STORE_SHELF = new BooleanSetting("revanced_hide_creator_store_shelf", TRUE);
     public static final BooleanSetting HIDE_END_SCREEN_STORE_BANNER = new BooleanSetting("revanced_hide_end_screen_store_banner", TRUE, true);

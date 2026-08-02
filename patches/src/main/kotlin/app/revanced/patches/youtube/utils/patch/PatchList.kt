@@ -277,10 +277,6 @@ internal enum class PatchList(
         "Watch history",
         "Adds an option to change the domain of the watch history or check its status."
     ),
-    FREEZE_LAYOUT_UPDATES(
-        "Freeze layout updates",
-        "Freeze the current server-side layout."
-    ),
     ADD_MISSING_RESOURCES(
         "Add missing resources",
         "Add missing resources to prevent crashes. Currently, only a few resources are supported. Also, replace missing drawables with a transparent image to prevent crashes."
