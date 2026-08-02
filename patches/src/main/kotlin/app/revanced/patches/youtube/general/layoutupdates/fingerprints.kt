@@ -6,17 +6,11 @@ import com.android.tools.smali.dexlib2.AccessFlags
 
 internal val hotConfigPreferenceFingerprint = legacyFingerprint(
     name = "hotConfigPreferenceFingerprint",
-    accessFlags = AccessFlags.PRIVATE or AccessFlags.FINAL,
-    parameters = emptyList(),
-    returnType = "V",
     strings = listOf("com.google.android.libraries.youtube.innertube.hot_stored_timestamp"),
 )
 
 internal val coldConfigPreferenceFingerprint = legacyFingerprint(
     name = "hotConfigPreferenceFingerprint",
-    accessFlags = AccessFlags.PRIVATE or AccessFlags.FINAL,
-    parameters = emptyList(),
-    returnType = "V",
     strings = listOf(
         "com.google.android.libraries.youtube.innertube.cold_config_group",
         "com.google.android.libraries.youtube.innertube.cold_stored_timestamp",
