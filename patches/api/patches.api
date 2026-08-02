@@ -1104,6 +1104,10 @@ public final class app/revanced/patches/youtube/utils/mainactivity/MainActivityR
 	public static final fun getMainActivityResolvePatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
+public final class app/revanced/patches/youtube/utils/missingresources/AddMissingResourcesPatchKt {
+	public static final fun getAddMissingResourcesPatch ()Lapp/revanced/patcher/patch/ResourcePatch;
+}
+
 public final class app/revanced/patches/youtube/utils/navigation/NavigationBarHookPatchKt {
 	public static field hookNavigationButtonCreated Lkotlin/jvm/functions/Function1;
 	public static final fun addBottomBarContainerHook (Ljava/lang/String;)V
