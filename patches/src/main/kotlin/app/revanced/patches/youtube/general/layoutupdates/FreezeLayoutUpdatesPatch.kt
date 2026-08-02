@@ -8,9 +8,6 @@ import app.revanced.patches.youtube.utils.patch.PatchList.FREEZE_LAYOUT_UPDATES
 import app.revanced.patches.youtube.utils.settings.ResourceUtils.addPreference
 import app.revanced.patches.youtube.utils.settings.settingsPatch
 import app.revanced.util.fingerprint.matchOrThrow
-import app.revanced.util.indexOfFirstInstructionOrThrow
-import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
-import com.android.tools.smali.dexlib2.iface.reference.StringReference
 
 private const val EXTENSION_CLASS_DESCRIPTOR = "$UTILS_PATH/FreezeLayoutUpdatesPatch;"
 
@@ -26,19 +23,17 @@ val freezeLayoutUpdatesPatch = bytecodePatch(
         // [BLOCK 1] Xử lý Hot Config
         hotConfigPreferenceFingerprint.matchOrThrow().let { match ->
             match.method.apply {
-                // Hook Hot Config Group
-                val hotConfigGroupIndex = indexOfFirstInstructionOrThrow { instruction ->
-                    instruction is ReferenceInstruction && instruction.reference is StringReference && (instruction.reference as StringReference).string == "com.google.android.libraries.youtube.innertube.hot_config_group"
-                }
+                val stringMatches = match.stringMatches!!
+
+                // Hot Config Group (Dùng index của chuỗi match được + offset 3)
+                val hotConfigGroupIndex = stringMatches.first { it.string == "com.google.android.libraries.youtube.innertube.hot_config_group" }.index
                 addInstructions(hotConfigGroupIndex + 3, """
                     invoke-static {v1}, $EXTENSION_CLASS_DESCRIPTOR->getHotConfigGroup(Ljava/lang/String;)Ljava/lang/String;
                     move-result-object v1
                 """)
 
-                // Hook Hot Hash Data
-                val hotHashDataIndex = indexOfFirstInstructionOrThrow { instruction ->
-                    instruction is ReferenceInstruction && instruction.reference is StringReference && (instruction.reference as StringReference).string == "com.google.android.libraries.youtube.innertube.hot_hash_data"
-                }
+                // Hot Hash Data (Dùng index của chuỗi match được + offset 2)
+                val hotHashDataIndex = stringMatches.first { it.string == "com.google.android.libraries.youtube.innertube.hot_hash_data" }.index
                 addInstructions(hotHashDataIndex + 2, """
                     invoke-static {v1}, $EXTENSION_CLASS_DESCRIPTOR->getHotHashData(Ljava/lang/String;)Ljava/lang/String;
                     move-result-object v1
@@ -46,22 +41,20 @@ val freezeLayoutUpdatesPatch = bytecodePatch(
             }
         }
 
-        // [BLOCK 2] Xử lý Cold Config (Vẫn giữ lại theo yêu cầu)
+        // [BLOCK 2] Xử lý Cold Config
         coldConfigPreferenceFingerprint.matchOrThrow().let { match ->
             match.method.apply {
-                // Hook Cold Config Group
-                val coldConfigGroupIndex = indexOfFirstInstructionOrThrow { instruction ->
-                    instruction is ReferenceInstruction && instruction.reference is StringReference && (instruction.reference as StringReference).string == "com.google.android.libraries.youtube.innertube.cold_config_group"
-                }
+                val stringMatches = match.stringMatches!!
+
+                // Cold Config Group (Dùng index của chuỗi match được + offset 3)
+                val coldConfigGroupIndex = stringMatches.first { it.string == "com.google.android.libraries.youtube.innertube.cold_config_group" }.index
                 addInstructions(coldConfigGroupIndex + 3, """
                     invoke-static {v1}, $EXTENSION_CLASS_DESCRIPTOR->getColdConfigGroup(Ljava/lang/String;)Ljava/lang/String;
                     move-result-object v1
                 """)
 
-                // Hook Cold Hash Data
-                val coldHashDataIndex = indexOfFirstInstructionOrThrow { instruction ->
-                    instruction is ReferenceInstruction && instruction.reference is StringReference && (instruction.reference as StringReference).string == "com.google.android.libraries.youtube.innertube.cold_hash_data"
-                }
+                // Cold Hash Data (Dùng index của chuỗi match được + offset 2)
+                val coldHashDataIndex = stringMatches.first { it.string == "com.google.android.libraries.youtube.innertube.cold_hash_data" }.index
                 addInstructions(coldHashDataIndex + 2, """
                     invoke-static {v1}, $EXTENSION_CLASS_DESCRIPTOR->getColdHashData(Ljava/lang/String;)Ljava/lang/String;
                     move-result-object v1
