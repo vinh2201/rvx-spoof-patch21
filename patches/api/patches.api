@@ -781,10 +781,6 @@ public final class app/revanced/patches/youtube/general/formfactor/ChangeFormFac
 	public static final fun getChangeFormFactorPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
-public final class app/revanced/patches/youtube/general/layoutupdates/FreezeLayoutUpdatesPatchKt {
-	public static final fun getFreezeLayoutUpdatesPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
-}
-
 public final class app/revanced/patches/youtube/general/livering/OpenChannelOfLiveAvatarPatchKt {
 	public static final fun getOpenChannelOfLiveAvatarPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
