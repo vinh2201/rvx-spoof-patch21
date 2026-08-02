@@ -128,8 +128,7 @@ val spoofAppVersionPatch = resourcePatch(
 
     execute {
         var settingArray = arrayOf(
-            "PREFERENCE_SCREEN: GENERAL",
-            "PREFERENCE_CATEGORY: GENERAL_EXPERIMENTAL_FLAGS",
+            "PREFERENCE_SCREEN: SPOOFING",
             "SETTINGS: SPOOF_APP_VERSION"
         )
 
