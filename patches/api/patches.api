@@ -837,7 +837,7 @@ public final class app/revanced/patches/youtube/general/updates/LayoutUpdatesPat
 	public static final fun getLayoutUpdatesPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
-public final class app/revanced/patches/youtube/general/updatescreen/DisableUpdateScreenPatchKt
+public final class app/revanced/patches/youtube/general/updatescreen/DisableUpdateScreenPatchKt {
 	public static final fun getDisableUpdateScreen ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
