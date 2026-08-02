@@ -11,7 +11,7 @@ import app.revanced.util.fingerprint.matchOrThrow
 
 @Suppress("unused")
 val layoutUpdatesPatch = bytecodePatch(
-    null,
+    DISABLE_LAYOUT_UPDATES.title,
     DISABLE_LAYOUT_UPDATES.summary,
 ) {
     compatibleWith(COMPATIBLE_PACKAGE)
