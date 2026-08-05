@@ -64,12 +64,8 @@ val addMissingResourcesPatch = resourcePatch(
 
             mapOf(
                 // Shorts player
-                "ic_right_like_off_shadowed" to "@drawable/ic_right_like_off_32c",
                 "ic_right_like_on_shadowed" to "@drawable/ic_right_like_on_32c",
-                "ic_right_dislike_off_shadowed" to "@drawable/ic_right_dislike_off_32c",
                 "ic_right_dislike_on_shadowed" to "@drawable/ic_right_dislike_on_32c",
-                "ic_right_comment_shadowed" to "@drawable/ic_right_comment_32c",
-                "ic_right_share_shadowed" to "@drawable/ic_right_share_32c",
                 "ic_remix_filled_white_shadowed" to "@drawable/ic_remix_filled_white_24",
 
                 // Comments
@@ -78,6 +74,21 @@ val addMissingResourcesPatch = resourcePatch(
                 "yt_fill_thumb_up_black_18" to "@drawable/yt_fill_thumb_up_black_24",
                 "yt_fill_thumb_down_black_18" to "@drawable/yt_fill_thumb_down_black_24",
                 "yt_fill_spark_black_24" to "@drawable/yt_fill_sparkle_white_24",
+
+                // Modern Shorts action button names requested by server-side layouts.
+                // YouTube 17.34.36 already has the original white shadowed buttons, so
+                // keep the legacy look and only add missing aliases.
+                "youtube_shorts_like_outline_32dp" to "@drawable/ic_right_like_off_32c",
+                "youtube_shorts_thumbs_up_outline_28dp" to "@drawable/ic_right_like_off_32c",
+                "youtube_shorts_dislike_outline_32dp" to "@drawable/ic_right_dislike_off_32c",
+                "youtube_shorts_thumbs_down_outline_28dp" to "@drawable/ic_right_dislike_off_32c",
+                "youtube_shorts_comment_outline_28dp" to "@drawable/ic_right_comment_32c",
+                "youtube_shorts_comment_outline_32dp" to "@drawable/ic_right_comment_32c",
+                "youtube_shorts_share_outline_28dp" to "@drawable/ic_right_share_32c",
+                "youtube_shorts_share_outline_32dp" to "@drawable/ic_right_share_32c",
+
+                // Other small Shorts resources introduced after 17.34.36
+                "shorts_creation_secondary_rounded_button_background" to "@drawable/shorts_rounded_button_background",
             ).forEach { (key, value) ->
                 val newElement = document.createElement("drawable")
                 newElement.setAttribute("name", key)
