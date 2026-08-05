@@ -64,12 +64,8 @@ val addMissingResourcesPatch = resourcePatch(
 
             mapOf(
                 // Shorts player
-                "ic_right_like_off_shadowed" to "@drawable/ic_right_like_off_32c",
                 "ic_right_like_on_shadowed" to "@drawable/ic_right_like_on_32c",
-                "ic_right_dislike_off_shadowed" to "@drawable/ic_right_dislike_off_32c",
                 "ic_right_dislike_on_shadowed" to "@drawable/ic_right_dislike_on_32c",
-                "ic_right_comment_shadowed" to "@drawable/ic_right_comment_32c",
-                "ic_right_share_shadowed" to "@drawable/ic_right_share_32c",
                 "ic_remix_filled_white_shadowed" to "@drawable/ic_remix_filled_white_24",
 
                 // Comments
