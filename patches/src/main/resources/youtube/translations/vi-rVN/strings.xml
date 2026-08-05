@@ -641,6 +641,7 @@ Các thay đổi bao gồm:
 Nếu tắt cài đặt này, biểu tượng Khuấy động có thể không hiển thị trong bảng nút thao tác và bảng mô tả video.
 
 ※ Ngay cả khi tắt, nút Khuấy động đôi khi vẫn không bị ẩn."</string>
+    <string name="revanced_preference_screen_spoofing_title">🌟 !!!GIẢ MẠO PHIÊN BẢN!!!</string>
     <string name="revanced_spoof_app_version_title">Giả mạo phiên bản ứng dụng</string>
     <string name="revanced_spoof_app_version_summary_on">Phiên bản đã được giả mạo</string>
     <string name="revanced_spoof_app_version_summary_off">Phiên bản không được giả mạo</string>
