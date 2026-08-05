@@ -95,9 +95,6 @@ val addMissingResourcesPatch = resourcePatch(
                 "youtube_shorts_comment_outline_32dp" to "@drawable/ic_right_comment_32c",
                 "youtube_shorts_share_outline_28dp" to "@drawable/ic_right_share_32c",
                 "youtube_shorts_share_outline_32dp" to "@drawable/ic_right_share_32c",
-
-                // Other small Shorts resources introduced after 17.34.36
-                "shorts_creation_secondary_rounded_button_background" to "@drawable/shorts_creation_rounded_button_background",
             ).forEach { (key, value) ->
                 val newElement = document.createElement("drawable")
                 newElement.setAttribute("name", key)
