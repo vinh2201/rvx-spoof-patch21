@@ -79,9 +79,18 @@ val addMissingResourcesPatch = resourcePatch(
                 "yt_fill_thumb_down_black_18" to "@drawable/yt_fill_thumb_down_black_24",
                 "yt_fill_spark_black_24" to "@drawable/yt_fill_sparkle_white_24",
 
+                // Server-side Cairo navigation icons introduced after YouTube 19.16.39.
+                "yt_fill_youtube_shorts_cairo_black_24" to "@drawable/yt_fill_youtube_shorts_vd_theme_12",
+                "yt_outline_bell_cairo_black_24" to "@drawable/yt_outline_bell_vd_theme_24",
+
                 // Modern Shorts action button names requested by server-side layouts.
                 // YouTube 17.34.36 already has the original white shadowed buttons, so
                 // keep the legacy look and only add missing aliases.
+                "yt_outline_search_cairo_black_24" to "@drawable/reel_search_bold_24dp",
+                "yt_outline_overflow_vertical_cairo_black_24" to "@drawable/reel_more_vertical_bold_24dp",
+                "yt_outline_chromecast_cairo_black_24" to "@drawable/yt_outline_chromecast_vd_theme_24",
+                "yt_outline_gear_cairo_black_24" to "@drawable/yt_outline_gear_black_24",
+                "yt_outline_arrow_left_cairo_black_24" to "@drawable/yt_outline_arrow_left_vd_theme_24",
                 "youtube_shorts_like_outline_32dp" to "@drawable/ic_right_like_off_32c",
                 "youtube_shorts_thumbs_up_outline_28dp" to "@drawable/ic_right_like_off_32c",
                 "youtube_shorts_dislike_outline_32dp" to "@drawable/ic_right_dislike_off_32c",
@@ -92,7 +101,7 @@ val addMissingResourcesPatch = resourcePatch(
                 "youtube_shorts_share_outline_32dp" to "@drawable/ic_right_share_32c",
 
                 // Other small Shorts resources introduced after 17.34.36
-                "shorts_creation_secondary_rounded_button_background" to "@drawable/shorts_rounded_button_background",
+                "shorts_creation_secondary_rounded_button_background" to "@drawable/shorts_creation_rounded_button_background",
             ).forEach { (key, value) ->
                 val newElement = document.createElement("drawable")
                 newElement.setAttribute("name", key)
