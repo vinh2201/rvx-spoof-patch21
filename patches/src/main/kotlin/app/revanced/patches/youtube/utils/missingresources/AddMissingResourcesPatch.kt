@@ -63,38 +63,64 @@ val addMissingResourcesPatch = resourcePatch(
             val rootNode = document.documentElement
 
             mapOf(
-                // Shorts player
-                "ic_right_like_on_shadowed" to "@drawable/ic_right_like_on_32c",
-                "ic_right_dislike_on_shadowed" to "@drawable/ic_right_dislike_on_32c",
-                "ic_remix_filled_white_shadowed" to "@drawable/ic_remix_filled_white_24",
+                // Server-side Cairo navigation icons introduced after YouTube 17.34.36.
+                "yt_fill_home_cairo_black_24" to "@drawable/yt_fill_home_black_24",
+                "yt_outline_home_cairo_black_24" to "@drawable/yt_outline_home_black_24",
+                "yt_fill_subscriptions_cairo_black_24" to "@drawable/yt_fill_subscriptions_black_24",
+                "yt_outline_subscriptions_cairo_black_24" to "@drawable/yt_outline_subscriptions_black_24",
+                "yt_fill_youtube_shorts_cairo_black_24" to "@drawable/yt_fill_youtube_shorts_black_24",
+                "yt_outline_youtube_shorts_cairo_black_24" to "@drawable/yt_outline_youtube_shorts_black_24",
+                "yt_fill_bell_cairo_black_24" to "@drawable/yt_fill_bell_black_24",
+                "yt_outline_bell_cairo_black_24" to "@drawable/yt_outline_bell_black_24",
 
-                // Comments
-                "yt_outline_thumb_up_black_18" to "@drawable/yt_outline_thumb_up_black_24",
-                "yt_outline_thumb_down_black_18" to "@drawable/yt_outline_thumb_down_black_24",
-                "yt_fill_thumb_up_black_18" to "@drawable/yt_fill_thumb_up_black_24",
-                "yt_fill_thumb_down_black_18" to "@drawable/yt_fill_thumb_down_black_24",
-                "yt_fill_spark_black_24" to "@drawable/yt_fill_sparkle_white_24",
-
-                // Server-side Cairo navigation icons introduced after YouTube 19.16.39.
-                "yt_fill_youtube_shorts_cairo_black_24" to "@drawable/yt_fill_youtube_shorts_vd_theme_12",
-                "yt_outline_bell_cairo_black_24" to "@drawable/yt_outline_bell_vd_theme_24",
+                // Modern Shorts top-bar Cairo icon names. Keep 17.34.36's
+                // original white legacy Shorts glyphs instead of the 20.xx look.
+                "yt_outline_search_cairo_black_24" to "@drawable/yt_outline_search_black_24",
+                "yt_outline_overflow_vertical_cairo_black_24" to "@drawable/yt_outline_overflow_vertical_black_24",
+                "yt_fill_chromecast_cairo_black_24" to "@drawable/yt_fill_chromecast_black_24",
+                "yt_outline_chromecast_cairo_black_24" to "@drawable/yt_outline_chromecast_black_24",
+                "yt_fill_compass_cairo_black_24" to "@drawable/yt_fill_compass_black_24",
+                "yt_outline_compass_cairo_black_24" to "@drawable/yt_outline_compass_black_24",
+                "yt_outline_gear_cairo_black_24" to "@drawable/yt_outline_gear_black_24",
+                "yt_outline_share_cairo_black_24" to "@drawable/yt_outline_share_black_24",
+                "yt_outline_arrow_left_cairo_black_24" to "@drawable/yt_outline_arrow_left_black_24",
 
                 // Modern Shorts action button names requested by server-side layouts.
                 // YouTube 17.34.36 already has the original white shadowed buttons, so
                 // keep the legacy look and only add missing aliases.
-                "yt_outline_search_cairo_black_24" to "@drawable/reel_search_bold_24dp",
-                "yt_outline_overflow_vertical_cairo_black_24" to "@drawable/reel_more_vertical_bold_24dp",
-                "yt_outline_chromecast_cairo_black_24" to "@drawable/yt_outline_chromecast_vd_theme_24",
-                "yt_outline_gear_cairo_black_24" to "@drawable/yt_outline_gear_black_24",
-                "yt_outline_arrow_left_cairo_black_24" to "@drawable/yt_outline_arrow_left_vd_theme_24",
                 "youtube_shorts_like_outline_32dp" to "@drawable/ic_right_like_off_32c",
+                "youtube_shorts_like_fill_32dp" to "@drawable/ic_right_like_on_32c",
                 "youtube_shorts_thumbs_up_outline_28dp" to "@drawable/ic_right_like_off_32c",
+                "youtube_shorts_thumbs_up_fill_28dp" to "@drawable/ic_right_like_on_32c",
                 "youtube_shorts_dislike_outline_32dp" to "@drawable/ic_right_dislike_off_32c",
+                "youtube_shorts_dislike_fill_32dp" to "@drawable/ic_right_dislike_on_32c",
                 "youtube_shorts_thumbs_down_outline_28dp" to "@drawable/ic_right_dislike_off_32c",
+                "youtube_shorts_thumbs_down_fill_28dp" to "@drawable/ic_right_dislike_on_32c",
                 "youtube_shorts_comment_outline_28dp" to "@drawable/ic_right_comment_32c",
                 "youtube_shorts_comment_outline_32dp" to "@drawable/ic_right_comment_32c",
                 "youtube_shorts_share_outline_28dp" to "@drawable/ic_right_share_32c",
                 "youtube_shorts_share_outline_32dp" to "@drawable/ic_right_share_32c",
+                "youtube_shorts_remix_outline_28dp" to "@drawable/ic_remix_filled_white_24",
+                "youtube_shorts_remix_outline_32dp" to "@drawable/ic_remix_filled_white_24",
+                "youtube_shorts_save_outline_28dp" to "@drawable/yt_outline_bookmark_black_24",
+                "youtube_shorts_save_outline_32dp" to "@drawable/yt_outline_bookmark_black_24",
+                "youtube_shorts_save_fill_28dp" to "@drawable/yt_fill_bookmark_black_24",
+                "youtube_shorts_save_fill_32dp" to "@drawable/yt_fill_bookmark_black_24",
+                "youtube_shorts_save_fill_selected_32dp" to "@drawable/yt_fill_bookmark_black_24",
+                "youtube_shorts_save_fill_unselected_32dp" to "@drawable/yt_outline_bookmark_black_24",
+                "youtube_shorts_original_sound_16dp" to "@drawable/quantum_ic_music_note_white_24",
+                "youtube_shorts_pivot_fab" to "@drawable/ic_youtube_shorts_24",
+
+                // Other small Shorts resources introduced after 17.34.36.
+                "ic_youtube_shorts_24_cairo" to "@drawable/ic_youtube_shorts_24",
+
+                // Comments
+                "yt_outline_thumb_up_cairo_black_24" to "@drawable/yt_outline_thumb_up_black_24",
+                "yt_outline_thumb_down_cairo_black_24" to "@drawable/yt_outline_thumb_down_black_24",
+                "yt_fill_thumb_up_cairo_black_24" to "@drawable/yt_fill_thumb_up_black_24",
+                "yt_fill_thumb_down_cairo_black_24" to "@drawable/yt_fill_thumb_down_black_24",
+                "yt_fill_spark_cairo_black_24" to "@drawable/yt_fill_sparkle_white_24",
+
             ).forEach { (key, value) ->
                 val newElement = document.createElement("drawable")
                 newElement.setAttribute("name", key)
